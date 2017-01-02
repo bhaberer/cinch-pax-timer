@@ -23,7 +23,7 @@ module Cinch
         { type:      'east',
           name:      'PAX East',
           date:      Time.parse('2017-03-10 08:00:00 -05:00'),
-          estimated: false }
+          estimated: true }
       ]
     end
   end
