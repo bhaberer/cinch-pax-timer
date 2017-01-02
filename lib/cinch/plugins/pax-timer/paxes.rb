@@ -6,8 +6,8 @@ module Cinch
       PAXES = [
         { type:      'aus',
           name:      'PAX Australia',
-          date:      Time.parse('2016-11-04 08:00:00 +11:00'),
-          estimated: false },
+          date:      Time.parse('2017-11-02 08:00:00 +11:00'),
+          estimated: true },
         { type:      'prime',
           name:      'PAX West',
           date:      Time.parse('2017-09-01 08:00:00 -08:00'),
