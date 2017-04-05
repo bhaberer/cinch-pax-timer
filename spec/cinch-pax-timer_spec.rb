@@ -16,7 +16,7 @@ describe Cinch::Plugins::PaxTimer do
     it 'should return the next pax' do
       msg = make_message(@bot, '!pax')
       msg = get_replies(msg).first
-      expect(msg.text).to match(/PAX.+is (approximatly )?\d+ days from now/)
+      expect(msg.text).to match(/PAX.+is (approximatly )?\d+ days from now (No official date, yet)/)
     end
 
     it 'should return nothing if there are arguments' do
