@@ -3,7 +3,7 @@ module Cinch
   module Plugins
     # Versioning info
     class PaxTimer
-      VERSION = '1.0.18'
+      VERSION = '1.0.19'
     end
   end
 end
