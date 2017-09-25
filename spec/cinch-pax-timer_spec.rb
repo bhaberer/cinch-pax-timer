@@ -49,6 +49,18 @@ describe Cinch::Plugins::PaxTimer do
     expect(msg.text).to match(/PAX West is.+days from now/)
   end
 
+  it 'should respond to .unplugged correctly' do
+    msg = make_message(@bot, '!unplugged')
+    msg = get_replies(msg).first
+    expect(msg.text).to match(/PAX Unplugged is.+days from now/)
+  end
+
+  it 'should respond to .paxunplugged correctly' do
+    msg = make_message(@bot, '!paxunplugged')
+    msg = get_replies(msg).first
+    expect(msg.text).to match(/PAX Unplugged is.+days from now/)
+  end
+
   it 'should respond to .east correctly' do
     msg = make_message(@bot, '!east')
     msg = get_replies(msg).first
